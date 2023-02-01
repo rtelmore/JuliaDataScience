@@ -21,8 +21,29 @@ How do you set up a project environment? I suggest reading [this site](https://t
 
 ```
 julia> ]
+(@v1.8) pkg>
 ```
 
+Once your in the package manager, it's time to create a project using the `generate` command. I suggest naming it something useful, e.g. juliadatascience. This will create a directory named `juliadatascience` in your current working directory. The directory will contain a `src` directory for all packages for this project and a `Project.toml` file. Note: Simply hit the backspace key if you want to exit out of the Pkg-REPL. 
 ```
-(@v1.8) pkg>
+(@v1.8) pkg> generate juliadatascience
+  Generating  project juliadatascience:
+    juliadatascience/Project.toml
+    juliadatascience/src/juliadatascience.jl
+
+(@v1.8) pkg> activate juliadatascience
+  Activating project at `~/research/JuliaDataScience/notebooks/juliadatascience`
+
+(juliadatascience) pkg>
+```
+
+Now it's time to add packages to this environment. Let's start with `IJulia`. 
+
+```
+(juliadatascience) pkg> add IJulia
+    Updating registry at `~/.julia/registries/General.toml`
+   Resolving package versions...
+    Updating `~/research/JuliaDataScience/notebooks/juliadatascience/Project.toml`
+  [7073ff75] + IJulia v1.24.0
+    Updating `~/research/JuliaDataScience/notebooks/juliadatascience/Manifest.toml`
 ```
