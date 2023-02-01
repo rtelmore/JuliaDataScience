@@ -47,3 +47,9 @@ Now it's time to add packages to this environment. Let's start with `IJulia`.
   [7073ff75] + IJulia v1.24.0
     Updating `~/research/JuliaDataScience/notebooks/juliadatascience/Manifest.toml`
 ```
+
+You may or may not notice a new file in your `juliadatascience` directory. It's the `Manifest.toml` file. This will keep track of packages that we install into this project. 
+
+Alright, it's time to get started on our project. Happy hacking with Julia!
+
+### Notebooks
