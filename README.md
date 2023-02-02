@@ -53,3 +53,6 @@ You may or may not notice a new file in your `juliadatascience` directory. It's 
 Alright, it's time to get started on our project. Happy hacking with Julia!
 
 ### Notebooks
+
+Direct links to the notebooks:
+1. [Chapter Three: Julia Basics](https://github.com/rtelmore/JuliaDataScience/blob/main/notebooks/03-julia-basics.ipynb)
