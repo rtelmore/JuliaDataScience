@@ -53,3 +53,20 @@ function compare(a, b)
         "a is equal to b"
     end
 end
+
+function add_one!(V)
+    for i in eachindex(V)
+        V[i] += 1
+    end
+    return nothing
+end
+
+function compare_interpolate(a, b)
+    if a < b
+        "$a is less than $b"
+    elseif a > b
+        "$a is greater than $b"
+    else
+        "$a is equal to $b"
+    end
+end
